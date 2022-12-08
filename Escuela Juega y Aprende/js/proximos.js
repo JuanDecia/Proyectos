@@ -1,4 +1,5 @@
-//Define las variables que necesites
+// Capturamos elementos del DOM
+
 let contEvento = document.getElementsByClassName('cont-evento');
 let tituloEvento = document.getElementsByClassName('titulo-evento');
 let contFecha = document.getElementsByClassName('cont-fecha');
@@ -9,20 +10,20 @@ let contDescripcion = document.getElementsByClassName('cont-descripcion');
 //Carga los datos que estan en el JSON (info.json) usando AJAX
 function cargarDatos() {
   $.ajax({
+
     url: 'info.json'
 
-    //Guarda el resultado en variables
   }).done(function(respuesta){
 
-    //Selecciona los eventos que sean posteriores a la fecha actual del JSON
+    // Ordena los eventos
     function organizarEventos(a, b) {
       return new Date(a.fecha).getTime() - new Date(b.fecha).getTime();
     }
 
-    //Ordena los eventos segun la fecha (los mas cercanos primero)
+    // Guardamos los eventos ordenados
     let eventosOrdenados = respuesta.eventos.sort(organizarEventos);
 
-    // Arreglo para colocar luego los próximos.
+    // Arreglo para colocar próximos.
     let proximos = [];
 
     // Los eventos proximos se colocan al arreglo "proximos"
@@ -36,7 +37,7 @@ function cargarDatos() {
 
     };
 
-    // Escribimos los proximos en el HTML
+    // Escribimos los proximos en el DOM
     for (let i = 0; i < proximos.length; i++) {
       tituloEvento[i].innerHTML += `<a href="detalle.html?id=${proximos[i].id}" class="p-2">${proximos[i].nombre}</a>`;
       contFecha[i].innerHTML += proximos[i].fecha + " -";
@@ -53,13 +54,5 @@ function cargarDatos() {
 $(document).ready(function () {
   
   cargarDatos();
-  
-  //Crea un string que contenga el HTML que describe el detalle del evento
-
-  // Escribe DOM
-  
-  //Recorre el arreglo y concatena el HTML para cada evento
-
-  //Modifica el DOM agregando el html generado dentro del div con id=evento
 
 });

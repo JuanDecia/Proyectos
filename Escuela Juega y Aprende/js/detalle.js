@@ -8,6 +8,7 @@ let contDescripcion = document.querySelector('.cont-descripcion');
 let contCosto = document.querySelector('.cont-costo');
 let contInvitados = document.querySelector('.cont-invitados');
 
+// Función para cargar el Json a través de Ajax
 function cargarDatos() {
 
   $.ajax({
@@ -17,14 +18,15 @@ function cargarDatos() {
   }).done(function(respuesta) {
 
     const eventos = respuesta.eventos;
-    const contenedor = document.getElementById('evento');
 
     let id = location.search.match(/id=(\d)*/)[1];
 
+    // Empareja el Id del Json con el id de la url
     evento = eventos.find(function (element) {
       return element.id == id
     });
 
+    // Escribimos Dom
     nombreEvento.innerHTML += `${evento.nombre}`;
     contFecha.innerHTML += `${evento.fecha}`;
     contLugar.innerHTML += `${evento.lugar}`;
@@ -38,17 +40,5 @@ function cargarDatos() {
 $(document).ready(function () {
 
   cargarDatos();
-
-  //Esta es la instruccion para tomar el id del URL detalle.html?id=<identificador>
-
-  //Carga los datos que estan en el JSON (info.json) usando AJAX
-
-  //Guarda el resultado en una variable
-
-  //Busca el elemento en el arreglo
-
-  //Crea un string que contenga el HTML que describe el detalle del evento
-
-  //Modifica el DOM agregando el html generado dentro del div con id=evento
 
 });

@@ -1,4 +1,4 @@
-//Define las variables que necesites
+// Capturamos elementos del DOM
 
 let primerEvento = document.querySelector('.primer-evento');
 let primerFecha = document.querySelector('.primer-fecha');
@@ -19,18 +19,20 @@ let segundoLugarPasado = document.querySelector('.segundo-lugar-pasado');
 function cargarDatos() {
 
   $.ajax({
-    url: 'http://127.0.0.1:5500/JS18S_C1_ProyectoBase_V2/info.json'
+
+    url: 'info.json'
+
   }).done(function(respuesta) {
 
-    // Ordenamos los eventos proximo a antiguo
+    // Ordenamos los eventos
     function organizarEventos(a, b) {
       return new Date(a.fecha).getTime() - new Date(b.fecha).getTime();
     }
 
-    // Lista con los eventos ordenados
+    // eventos ordenados guardados
     let eventosOrdenados = respuesta.eventos.sort(organizarEventos);
 
-    // Arreglo para colocar proximos y pasados.
+    // Arreglos para colocar proximos y pasados.
     let proximos = [];
     let pasados = [];
 
@@ -82,31 +84,5 @@ function cargarDatos() {
 $(document).ready(function () {
 
   cargarDatos();
-
-  //Carga los datos que estan en el JSON (info.json) usando AJAX
-
-  //Guarda el resultado en variables
-
-  //Clasifica los eventos segun la fecha actual del JSON
-
-  //Ordena los eventos segun la fecha (los mas cercanos primero)
-
-  //Extrae solo dos eventos
-
-  //Ordena los eventos segun la fecha (los mas cercanos primero)
-
-  //Extrae solo dos eventos
-
-  //Crea un string que contenga el HTML que describe el detalle del evento
-
-  //Recorre el arreglo y concatena el HTML para cada evento
-
-  //Modifica el DOM agregando el html generado
-
-  //Crea un string que contenga el HTML que describe el detalle del evento
-
-  //Recorre el arreglo y concatena el HTML para cada evento
-
-  //Modifica el DOM agregando el html generado
 
 });
