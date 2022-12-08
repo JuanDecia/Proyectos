@@ -1,0 +1,12 @@
+.evento-proximo, .evento-pasado, #evento {
+    background-color: #fff;
+}
+
+#evento {
+    display: flex;
+    justify-content: center;
+}
+
+.cont-primero {
+    margin-right: 30px;
+}

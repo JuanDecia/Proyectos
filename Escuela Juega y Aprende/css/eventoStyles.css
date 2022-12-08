@@ -1,0 +1,22 @@
+.cont-evento {
+    background-color: #fff;
+}
+
+.cont-fecha-lugar {
+    display: flex;
+    color: gray;
+}
+
+.cont-lugar {
+    margin-left: 5px;
+}
+
+.cont-costo {
+    color: rgb(17, 161, 161);
+}
+
+.titulo-evento {
+    color: royalblue;
+    font-family: 'Calibri';
+    font-size: 150%;
+}
