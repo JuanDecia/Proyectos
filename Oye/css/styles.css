@@ -1,0 +1,50 @@
+/*==================== Estilos Generales ==================== */
+* {
+    box-sizing: border-box;
+}
+
+/*==================== Estilos Header ======================= */
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(27, 128, 196);
+}
+
+/*==================== Estilos del Carousel ================= */
+
+#contenedor-carousel-texto {
+    width: 70%;
+}
+
+#contenedor-carousel-texto > button {
+    width: 100%;
+}
+
+/*==================== Estilos Tablas ======================= */
+@media (max-width:500px) {
+    .nombre_cancion {
+        display: none;
+    }
+}
+
+/*==================== Estilos Footer ======================= */
+
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:500px) {
+    footer > div {
+        justify-content: center;
+    }
+
+    .span1 {
+        display: none;
+    }
+
+}
+
+/*==================== Estilos Adicionales ================== */

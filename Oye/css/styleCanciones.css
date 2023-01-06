@@ -1,0 +1,44 @@
+.fondo-imagen-canciones {
+    background-color: rgb(238, 238, 238);
+}
+
+.contenedor-boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bloque-canciones {
+    margin-bottom: 20px;
+}
+
+.archivo-mp3 {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 500px) {
+
+    #res {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    article.col-4.bloque-canciones {
+        margin: 20px 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 992px) {
+
+    #res {
+        display: flex;
+        width: 100%;
+    }
+
+    article.col-4.bloque-canciones {
+        width: 50%;
+    }
+}

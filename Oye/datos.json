@@ -1,0 +1,57 @@
+[
+	{
+		"nombre": "vive",
+		"ruta": "../canciones/uno.mp3",
+		"reproducciones": 10,
+		"icono": "../img/icon_4.svg"
+	},
+	{
+		"nombre": "invierno",
+		"ruta": "../canciones/dos.mp3",
+		"reproducciones": 30,
+		"icono": "../img/icon_1.svg"
+	},
+	{
+		"nombre": "planeta",
+		"ruta": "../canciones/tres.mp3",
+		"reproducciones": 20,
+		"icono": "../img/icon_3.svg"
+	},
+	{
+		"nombre": "suave",
+		"ruta": "../canciones/cuatro.mp3",
+		"reproducciones": 80,
+		"icono": "../img/icon_2.svg"
+	},
+	{
+		"nombre": "contigo",
+		"ruta": "../canciones/cinco.mp3",
+		"reproducciones": 50,
+		"icono": "../img/icon_4.svg"
+	},
+	{
+		"nombre": "alas",
+		"ruta": "../canciones/seis.mp3",
+		"reproducciones": 70,
+		"icono": "../img/icon_1.svg"
+	},
+	{
+		"nombre": "verde",
+		"ruta": "../canciones/siete.mp3",
+		"reproducciones": 60,
+		"icono": "../img/icon_3.svg"
+	},
+	{
+		"nombre": "nuevamente",
+		"ruta": "../canciones/ocho.mp3",
+		"reproducciones": 90,
+		"icono": "../img/icon_1.svg"
+	},
+	{
+		"nombre": "hoy",
+		"ruta": "../canciones/nueve.mp3",
+		"reproducciones": 40,
+		"icono": "../img/icon_2.svg"
+	}
+]
+

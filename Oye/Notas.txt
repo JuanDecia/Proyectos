@@ -1,0 +1,14 @@
+Bienvenido a mi página de oye!
+
+La página inicial se aloja en "index.html" la cual contiene los scripts de "bootstrap" y "top.js". También,
+tiene enlazada los estilos de "google.fonts" y estilos adicionales en "styles.css".
+
+=========================================================================================================================
+Styles.css
+
+Los estilos están divididos semánticamente según el html. La división está creada con comentarios.
+
+=========================================================================================================================
+Para las páginas adicionales, he creado un archivo .html con el nombre que le corresponde. Cada una de estas también,
+tienen sus estilos y scripts con los nombres correspondientes al nombre de su .html . Esto lo hice con el objetivo
+de tener los codigos ordenados y hojas más limpias.
