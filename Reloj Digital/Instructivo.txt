@@ -1,0 +1,6 @@
+En este proyecto se crea una página simple donde solo se desplegará un Reloj Digital.
+
+El objetivo de este proyecto es utilizar semantica de HTML y Estilos de CSS para lograr el objetivo de crear un 
+reloj digital para el usuario.
+
+Si se necesita se agregaran pequeñas funcionalidades de JS.
