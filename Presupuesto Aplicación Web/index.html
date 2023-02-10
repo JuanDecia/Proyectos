@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicación Presupuesto</title>
+
+    <!--CSS-->
+    <link href="css/estilos.css" rel='stylesheet' />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+</head>
+<body onload='cargarApp()'>
+
+    <!-- Header -->
+    <div class="cabecero">
+        <div class="presupuesto">
+
+            <h1 class="presupuesto_titulo">Presupuesto Disponible</h1>
+
+            <div class="presupuesto_valor" id='presupuesto'>+ 2,000.00</div>
+
+            <!-- Ingreso Total -->
+            <div class="presupuesto_ingreso limpiarEstilos">
+                <div class="presupuesto_ingreso--texto">Ingresos</div>
+                <div class="derecha">
+                    <div class="presupuesto_ingreso--valor" id='ingresos'>+4,000.00</div>
+                    <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
+                </div>
+            </div>
+
+            <!-- Egreso Total -->
+            <div class="presupuesto_egreso limpiarEstilos">
+                <div class="presupuesto_egreso--texto">Egresos</div>
+                <div class="derecha limpiarEstilos">
+                    <div class="presupuesto_egreso--valor" id='egresos'>- 1,900.00</div>
+                    <div class="presupuesto_egreso--porcentaje" id='porcentaje'>45%</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Campos para agregar ingresos y egresos -->
+    <form id="forma" onsubmit="return false;">
+        <div class="agregar">
+
+            <div class="agregar_contenedor">
+
+                <select name="" id="tipo" class="agregar_tipo">
+                    <option value="ingreso" selected>+</option>
+                    <option value="egreso">-</option>
+                </select>
+
+                <input type="text" id="descripcion" class="agregar_descripcion" 
+                placeholder="Agregar Descripcion"/>
+
+                <input type="number" id="valor" class="agregar_valor" placeholder="Valor" step="any"/>
+
+                <button class="agregar_btn" onclick="agregarDato()">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Contenido -->
+    <div class="contenedor limpiarEstilos">
+
+        <!-- Ingresos -->
+        <div class="ingreso">
+
+            <h2 class='ingreso_titulo'>Ingresos</h2>
+
+            <div id='lista-ingresos'>
+
+                <!-- Elemento no visible #1 
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">Salario</div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">+ 2,200.00</div>
+                        <div class="elemento_eliminar">
+                            <button class='elemento_eliminar--btn'>
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Elemento no visible #2
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">Venta coche</div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">+ 1,500.00</div>
+                        <div class="elemento_eliminar">
+                            <button class='elemento_eliminar--btn'>
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+            </div>
+
+        </div>
+
+        <!-- Egresos -->
+        <div class="egreso">
+
+            <h2 class='egreso_titulo'>Egresos</h2>
+
+            <div id='lista-egresos'>
+
+                <!-- Elemento no visible #1 
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">Renta departamento</div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">- 900.00</div>
+                        <div class="elemento_porcentaje">21%</div>
+                        <div class="elemento_eliminar">
+                            <button class='elemento_eliminar--btn'>
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <!-- Elemento no visible 2 
+                <div class="elemento limpiarEstilos">
+                    <div class="elemento_descripcion">Ropa</div>
+                    <div class="derecha limpiarEstilos">
+                        <div class="elemento_valor">- 400.00</div>
+                        <div class="elemento_porcentaje">10%</div>
+                        <div class="elemento_eliminar">
+                            <button class='elemento_eliminar--btn'>
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src='js/Dato.js'></script>
+    <script src='js/Ingreso.js'></script>
+    <script src='js/Egreso.js'></script>
+    <script src='js/app.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
