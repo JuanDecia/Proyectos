@@ -1,5 +1,6 @@
 class Egreso extends Dato {
 
+    // static para que interactue con la clase
     static contadorEgresos = 0;
 
     constructor(descripcion, valor) {
