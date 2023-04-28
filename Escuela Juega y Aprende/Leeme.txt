@@ -1,7 +1,10 @@
-El objetivo del programa es consumir un Json a través de un servidor local para utilizar los datos necesarios
+El objetivo del programa es consumir un Json a través de un SERVIDOR LOCAL para utilizar los datos necesarios
 que solicita la entidad "Escuela". Los pasos a seguir fueron:
 
 	* Cargar el Json.
 	* Separar los eventos pasados y próximos en un arreglo utilizando un condicional if partiendo de la fecha actual.
 	* Modificar el DOM para mostrar los eventos correspondientes en sus respectivas páginas.
 	* Crear una página "detalles" para ver los detalles completo del evento.
+
+Es importante destacar que se debe CORRER EN UN SERVIDOR LOCAL de la pc para ver dinamicamente los elementos que se trae
+del JSON. Este error es causado por la política de Same-Origin de los navegadores web.
