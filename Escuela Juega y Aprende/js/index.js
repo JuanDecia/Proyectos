@@ -5,21 +5,21 @@ peticion.send();
 
 // Capturamos elementos del DOM
 
-let primerEvento = document.querySelector('.primer-evento');
-let primerFecha = document.querySelector('.primer-fecha');
-let primerLugar = document.querySelector('.primer-lugar');
+const primerEvento = document.querySelector('.primer-evento');
+const primerFecha = document.querySelector('.primer-fecha');
+const primerLugar = document.querySelector('.primer-lugar');
 
-let segundoEvento = document.querySelector('.segundo-evento');
-let segundaFecha = document.querySelector('.segunda-fecha');
-let segundoLugar = document.querySelector('.segundo-lugar');
+const segundoEvento = document.querySelector('.segundo-evento');
+const segundaFecha = document.querySelector('.segunda-fecha');
+const segundoLugar = document.querySelector('.segundo-lugar');
 
-let primerEventoPasado = document.querySelector('.primer-evento-pasado');
-let primerFechaPasada = document.querySelector('.primer-fecha-pasada');
-let primerLugarPasado = document.querySelector('.primer-lugar-pasado');
+const primerEventoPasado = document.querySelector('.primer-evento-pasado');
+const primerFechaPasada = document.querySelector('.primer-fecha-pasada');
+const primerLugarPasado = document.querySelector('.primer-lugar-pasado');
 
-let segundoEventoPasado = document.querySelector('.segundo-evento-pasado');
-let segundaFechaPasada = document.querySelector('.segunda-fecha-pasada');
-let segundoLugarPasado = document.querySelector('.segundo-lugar-pasado');
+const segundoEventoPasado = document.querySelector('.segundo-evento-pasado');
+const segundaFechaPasada = document.querySelector('.segunda-fecha-pasada');
+const segundoLugarPasado = document.querySelector('.segundo-lugar-pasado');
 
 peticion.onload = () => {
 
