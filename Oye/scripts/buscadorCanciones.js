@@ -1,7 +1,7 @@
 
 let peticion = new XMLHttpRequest();
 
-peticion.open('GET', '/datos.json');
+peticion.open('GET', '../datos.json');
 
 peticion.send();
 
